@@ -11,18 +11,49 @@
     <title>Hobbies</title>
 </head>
 <body>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Member Sign In</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+<!-- Need to replace plcaeholder input IDs to connect with firebase backend here -->
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">Your email will be kept confidential.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <small id="emailHelp" class="form-text text-muted">Passwords are case sensitive.</small>
+  </div>
+  
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+      </div>
+    </div>
+  </div>
+</div>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="homepage.html">Tristan Priestley's Portfolio</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <div class="collapse navbar-collapse text-right" id="navbarNavDropdown">
         <ul class="navbar-nav">
+
             <li class="nav-item">
-                <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Our%20Team.html">Our Team</a>
+                <a class="nav-link" href="OurTeam.html">My Team</a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="Hobbies.html">Hobbies</a>
@@ -34,7 +65,10 @@
                 <a class="nav-link" href="awards.html">Awards</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Products.html">Products</a>
+                <a class="nav-link" href="contactus.html">Contact Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="location.html">Location</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="download.html">Download</a>
@@ -43,24 +77,28 @@
                 <a class="nav-link" href="blog.html">Exclusive Blog</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="SignIn.html">Sign In</a>
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter" style="display:inline-block;">Sign In</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="createAcc.html">Create Account</a>
+                <a class="nav-link" href="createAcc.html" style="display:inline-block;">Create Account</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="display: none;">Sign Out</a>
             </li>
             <!--<li class="nav-item dropdown">-->
-            <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-            <!--About Me-->
-            <!--</a>-->
-            <!--<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
-            <!--<a class="dropdown-item" href="Hobbies.html">Hobbies</a>-->
-            <!--<a class="dropdown-item" href="#">Education</a>-->
-            <!--<a class="dropdown-item" href="#">Travel</a>-->
-            <!--</div>-->
+                <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                    <!--About Me-->
+                <!--</a>-->
+                <!--<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
+                    <!--<a class="dropdown-item" href="Hobbies.html">Hobbies</a>-->
+                    <!--<a class="dropdown-item" href="#">Education</a>-->
+                    <!--<a class="dropdown-item" href="#">Travel</a>-->
+                <!--</div>-->
             <!--</li>-->
         </ul>
     </div>
 </nav>
+
 <div class="aggropadding">
         <h1>My Hobbies</h1>
     <p>Things I enjoy. </p>
