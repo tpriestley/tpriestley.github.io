@@ -93,7 +93,7 @@
             <li class="nav-item" id="signin">
                 <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter">Sign In</a>
             </li>
-            <li class="nav-item" id="createAcc">
+            <li class="nav-item active" id="createAcc">
                 <a class="nav-link" href="createAcc.html">Create Account</a>
             </li>
             <li class="nav-item hiddenauthen" id="signout">
@@ -110,7 +110,7 @@
   <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="validationCustom01">Full name</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="Full name" required>
+      <input type="text" class="form-control" placeholder="John Smith" required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -144,24 +144,24 @@
   </div>
   <div class="form-row">
     <div class="col-md-6 mb-3">
-      <label for="validationCustom03">City</label>
-      <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+      <label for="validationCustom03">Address</label>
+      <input type="text" class="form-control" placeholder="1234 Main St" required>
+      <div class="invalid-feedback">
+        Please provide a valid address.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">City</label>
+      <input type="text" class="form-control" placeholder="City" required>
       <div class="invalid-feedback">
         Please provide a valid city.
       </div>
     </div>
     <div class="col-md-3 mb-3">
-      <label for="validationCustom04">Province</label>
-      <input type="text" class="form-control" id="validationCustom04" placeholder="Province" required>
+      <label for="validationCustom05">Province</label>
+      <input type="text" class="form-control" placeholder="Province" required>
       <div class="invalid-feedback">
         Please provide a valid province.
-      </div>
-    </div>
-    <div class="col-md-3 mb-3">
-      <label for="validationCustom05">Postal Code</label>
-      <input type="text" class="form-control" id="validationCustom05" placeholder="Postal Code" required>
-      <div class="invalid-feedback">
-        Please provide a valid postal code.
       </div>
     </div>
   </div>
@@ -180,14 +180,11 @@
 </form>
 
 </div>
-<footer class="d-flex justify-content-center mt-auto" id="footer">
+<footer class="d-flex justify-content-center mt-auto"  id="footer">
     <div class="d-flex justify-content-between col-md-8 col-md-offset-2 mb-3 mt-5">
         <div class="align-left">
             <p> Copyright 2019 Tristan Priestley </p>
         </div>
-        <!--<div class="align-right small">-->
-        <!--Created by <a class="font-weight-bold" href="#">Kraz</a>-->
-        <!--</div>-->
     </div>
 </footer>
 

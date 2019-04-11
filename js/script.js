@@ -56,7 +56,7 @@ var errorMessage = error.message;
 
 function signOut(){
 firebase.auth().signOut().then(function() {
-alert("Signed out!");
+alert("You have successfully logged out");
 }).catch(function(error) {
 // An error happened.
 });
@@ -75,9 +75,7 @@ function OnSignOut(){
     $("#exblog").addClass("hiddenauthen");
 }
 
-// document.getElementById("signinBtn").addEventListener("click", SignIn);
-// document.getElementById("signinBtn").addEventListener("click", OnSignIn);
-// #Firebase authentication check after state change. Not super useful atm.
+
 firebase.auth().onAuthStateChanged(function(user) {
 if (user) {
 	OnSignIn();
@@ -91,5 +89,3 @@ console.log(user.toJSON());
 // alert("user not signed in");
 }
 });
-
-// $(‘#IDname’).removeClass(‘disabled’)
