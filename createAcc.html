@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <title>Home</title>
+    <title>Create Account</title>
 
     <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
     <script>
@@ -29,7 +29,7 @@
         
     </script>
 </head>
-<body>
+<body onload="dumbuser()">
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -110,7 +110,7 @@
   <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="validationCustom01">Full name</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="Full name">
+      <input type="text" class="form-control" id="validationCustom01" placeholder="Full name" required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -145,21 +145,21 @@
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationCustom03">City</label>
-      <input type="text" class="form-control" id="validationCustom03" placeholder="City">
+      <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
       <div class="invalid-feedback">
         Please provide a valid city.
       </div>
     </div>
     <div class="col-md-3 mb-3">
       <label for="validationCustom04">Province</label>
-      <input type="text" class="form-control" id="validationCustom04" placeholder="Province">
+      <input type="text" class="form-control" id="validationCustom04" placeholder="Province" required>
       <div class="invalid-feedback">
         Please provide a valid province.
       </div>
     </div>
     <div class="col-md-3 mb-3">
       <label for="validationCustom05">Postal Code</label>
-      <input type="text" class="form-control" id="validationCustom05" placeholder="Postal Code">
+      <input type="text" class="form-control" id="validationCustom05" placeholder="Postal Code" required>
       <div class="invalid-feedback">
         Please provide a valid postal code.
       </div>
