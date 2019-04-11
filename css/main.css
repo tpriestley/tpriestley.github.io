@@ -31,3 +31,7 @@
     width:100%;
     position:absolute;
 }
+
+.hiddenauthen {
+	display: none;
+}

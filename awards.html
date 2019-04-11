@@ -8,7 +8,26 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <title>Our Team</title>
+    <title>Home</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD2nguZnqvjhdaiWhcL-bobCWl2IMkeR70",
+    authDomain: "final-5d8da.firebaseapp.com",
+    databaseURL: "https://final-5d8da.firebaseio.com",
+    projectId: "final-5d8da",
+    storageBucket: "final-5d8da.appspot.com",
+    messagingSenderId: "219139803834"
+  };
+  firebase.initializeApp(config);
+
+    </script>
+    <script src="js/script.js"></script>
+    <script>
+        
+    </script>
 </head>
 <body>
 <!-- Modal -->
@@ -23,23 +42,21 @@
       </div>
       <div class="modal-body">
         <form>
-<!-- Need to replace plcaeholder input IDs to connect with firebase backend here -->
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <input type="email" class="form-control" id="inputemail" aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">Your email will be kept confidential.</small>
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <input type="password" class="form-control" id="inputpassword" placeholder="Password">
     <small id="emailHelp" class="form-text text-muted">Passwords are case sensitive.</small>
   </div>
-  
 </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Sign In</button>
+        <button type="submit" class="btn btn-primary" onclick="signIn();" data-dismiss="modal" id="signinBtn">Sign In</button>
       </div>
     </div>
   </div>
@@ -61,7 +78,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="pastprojects.html">Past Projects</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="awards.html">Awards</a>
             </li>
             <li class="nav-item">
@@ -70,31 +87,18 @@
             <li class="nav-item">
                 <a class="nav-link" href="location.html">Location</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="download.html">Download</a>
-            </li>
-            <li class="nav-item">
+            <li class="nav-item" id="exblog">
                 <a class="nav-link" href="blog.html">Exclusive Blog</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter" style="display:inline-block;">Sign In</a>
+            <li class="nav-item" id="signin">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter">Sign In</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="createAcc.html" style="display:inline-block;">Create Account</a>
+            <li class="nav-item" id="createAcc">
+                <a class="nav-link" href="createAcc.html">Create Account</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" style="display: none;">Sign Out</a>
+            <li class="nav-item hiddenauthen" id="signout">
+                <a class="nav-link" href="JavaScript:signOut()">Sign Out</a>
             </li>
-            <!--<li class="nav-item dropdown">-->
-                <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-                    <!--About Me-->
-                <!--</a>-->
-                <!--<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
-                    <!--<a class="dropdown-item" href="Hobbies.html">Hobbies</a>-->
-                    <!--<a class="dropdown-item" href="#">Education</a>-->
-                    <!--<a class="dropdown-item" href="#">Travel</a>-->
-                <!--</div>-->
-            <!--</li>-->
         </ul>
     </div>
 </nav>
